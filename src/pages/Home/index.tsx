@@ -6,7 +6,7 @@ interface HomeProps {
 }
  
 const Home: React.FC<HomeProps> = (props) => {
-    return ( <div className={styles.home}>home</div> );
+    return ( <div className={styles.home}>home1 </div> );
 }
  
 export default Home;
