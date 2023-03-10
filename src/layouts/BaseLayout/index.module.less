@@ -1,0 +1,33 @@
+
+/** 导航栏高度 */
+@header_height:60px;
+
+.section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .header{
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+    .content{
+        max-height: calc(100vh - @header_height);
+        display: flex;
+        position: relative;
+        flex: 1 1 auto;
+        .aside{
+            
+        }
+        .container{
+            flex: 1 1 auto;
+            overflow: hidden;
+            .outlet{
+                box-sizing: border-box;
+                height: 100%;
+                overflow: auto;
+                padding: 20px;            
+            }
+        }
+    }
+}
