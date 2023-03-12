@@ -8,7 +8,7 @@ interface HeaderProps {
  
 const Header: React.FC<HeaderProps> = (props) => {
     const {  }=props;
-    return ( <div className={styles.header}>header</div> );
+    return ( <div className={styles.header}>后台管理系统</div> );
 }
  
 export default Header;

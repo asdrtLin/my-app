@@ -3,6 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout";
 import Home from "@/pages/Home";
 import Books from '@/pages/Books';
 import ErrorPage from "@/pages/ErrorPage";
+import Todo from "./pages/Todo";
 import NoMatch from "@/pages/NoMatch";
 
 const router = createBrowserRouter([
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
       {
         path:'',
         element: <Home />
+      },
+      {
+        path: "todo",
+        errorElement:<ErrorPage />,
+        element: <Todo />,
       },
       {
         path:'*',
